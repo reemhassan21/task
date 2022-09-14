@@ -121,9 +121,19 @@
     width: 88%;
     margin-left: 10%;
   }
+  #blue {
+    margin-left: 15px;
+  }
+  #silver {
+    margin-left: 28px;
+  }
   .rightSide {
     width: 95%;
     padding: 5%;
+  }
+  .insdets,
+  .pricedets {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -146,15 +156,13 @@
   #blue {
     margin-left: 10px;
   }
-  .insdets {
+  .insdets,
+  .pricedets {
     font-size: 13px;
   }
   #btn {
     width: 100%;
     margin-top: 3%;
     height: 35px;
-  }
-  .pricedets {
-    font-size: 13px;
   }
 }
