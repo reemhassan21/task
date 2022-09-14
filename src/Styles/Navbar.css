@@ -1,0 +1,95 @@
+.line {
+  border-left: 1px solid gray;
+  height: 30px;
+  display: inline-block;
+}
+.navBar {
+  background-color: #1c1c1c;
+  height: 69px;
+  width: 100%;
+}
+.navElements {
+  /* background-color: bisque; */
+  width: 70%;
+  margin-left: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.linksDiv {
+  /* background-color: green; */
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconClass {
+  /* background-color: rebeccapurple; */
+  height: 100%;
+  width: 4%;
+}
+.iconsDiv {
+  /* background-color: red; */
+  width: 16%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.isMobile {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .iconClass {
+    margin-left: -60px;
+    width: 10%;
+  }
+  .linksDiv {
+    display: none;
+  }
+  .iconsDiv {
+    display: none;
+  }
+  .linksDivMobile {
+    display: block;
+    flex-direction: column;
+    display: flex;
+    background-color: #1c1c1c;
+    position: absolute;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .link {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding: 2.5px;
+    transition: all 0.5s ease;
+    border: 1px white solid;
+  }
+  .navElements {
+    position: relative;
+  }
+  .isMobile {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    background-color: #1c1c1c;
+    color: white;
+    outline: none;
+    border: none;
+    top: 20px;
+    right: -35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .iconClass {
+    width: 15%;
+  }
+}
