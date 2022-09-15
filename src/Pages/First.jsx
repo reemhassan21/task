@@ -13,7 +13,7 @@ import { useContext } from "react";
 import { ProductContext } from "../context/Context";
 
 export default function InStock(props) {
-  const { productImgs } = useContext(ProductContext);
+  const { productImgs, Prices } = useContext(ProductContext);
   const location = useLocation();
   const productID = location.state;
   const [counter, setCounter] = useState(1);
@@ -65,7 +65,7 @@ export default function InStock(props) {
               marginBottom: "-20px",
             }}
           >
-            $19.00
+            ${Prices[productID - 1]}
           </p>
           <p style={{ color: "green" }}>InStock</p>
           <div className="counter">
